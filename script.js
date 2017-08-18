@@ -172,5 +172,4 @@ document.addEventListener('keydown', event => {
     document.getElementById('keyCodeValue').innerHTML = buttonPressed;
     document.getElementById('keyBlock').style.visibility = 'visible';
     document.getElementById('buttonPressed').innerHTML = keyCodes[buttonPressed] || "Not sure what you pressed there buddy!";
-    console.log(String.fromCharCode(buttonPressed));
 });
