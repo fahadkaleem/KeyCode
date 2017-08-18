@@ -166,11 +166,11 @@ var keyCodes = {
     255 : "toggle touchpad"
 };
 
-document.getElementById('buttonPressed').style.display === 'none';
+document.getElementById('keyBlock').style.visibility = 'hidden';
 document.addEventListener('keydown', event => {
     var buttonPressed = event.keyCode;
     document.getElementById('keyCodeValue').innerHTML = buttonPressed;
-    document.getElementById('buttonPressed').style.display === 'block';
+    document.getElementById('keyBlock').style.visibility = 'visible';
     document.getElementById('buttonPressed').innerHTML = keyCodes[buttonPressed] || "Not sure what you pressed there buddy!";
     console.log(String.fromCharCode(buttonPressed));
 });
