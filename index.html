@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Key Code JS</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <style>
-        body{
+        body {
             margin-top: 100px;
             background: #FFAB91;
             color: #EEEEEE;
         }
-        h1{
+
+        h1 {
             font-size: 300px;
         }
     </style>
@@ -20,7 +22,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-        <h1 class="text-center" id="keyCodeValue"></h1>
+            <h1 class="text-center" id="keyCodeValue"></h1>
             <div class="card card-inverse card-primary mb-3 text-center">
                 <div class="card-block">
                     <blockquote class="card-blockquote">
@@ -33,7 +35,7 @@
 </div>
 <script>
     document.getElementById('buttonPressed').style.display === 'none';
-    document.addEventListener('keydown',event=>{
+    document.addEventListener('keydown', event => {
         var buttonPressed = event.keyCode;
         document.getElementById('keyCodeValue').innerHTML = buttonPressed;
         document.getElementById('buttonPressed').style.display === 'block';
