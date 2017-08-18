@@ -15,6 +15,11 @@
         h1 {
             font-size: 300px;
         }
+        .key{
+            background: #E8E8E8;
+            color: black;
+            box-shadow: #424242;
+        }
     </style>
 
 </head>
@@ -23,7 +28,7 @@
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <h1 class="text-center" id="keyCodeValue"></h1>
-            <div class="card card-inverse card-primary mb-3 text-center">
+            <div class="card card-inverse text-center key">
                 <div class="card-block">
                     <blockquote class="card-blockquote">
                         <h3 id="buttonPressed"></h3>
@@ -33,15 +38,6 @@
         </div>
     </div>
 </div>
-<script>
-    document.getElementById('buttonPressed').style.display === 'none';
-    document.addEventListener('keydown', event => {
-        var buttonPressed = event.keyCode;
-        document.getElementById('keyCodeValue').innerHTML = buttonPressed;
-        document.getElementById('buttonPressed').style.display === 'block';
-        document.getElementById('buttonPressed').innerHTML = String.fromCharCode(buttonPressed);
-        console.log(String.fromCharCode(buttonPressed));
-    });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
